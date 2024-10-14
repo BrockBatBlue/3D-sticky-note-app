@@ -1,0 +1,11 @@
+Model Information:
+* title:	bathroom trash basket
+* source:	https://sketchfab.com/3d-models/bathroom-trash-basket-e76eb2ed248c42f1921dffcc53cd2e94
+* author:	gootherts (https://sketchfab.com/gootherts)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "bathroom trash basket" (https://sketchfab.com/3d-models/bathroom-trash-basket-e76eb2ed248c42f1921dffcc53cd2e94) by gootherts (https://sketchfab.com/gootherts) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

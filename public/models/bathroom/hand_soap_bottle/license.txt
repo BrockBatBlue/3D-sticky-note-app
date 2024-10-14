@@ -1,0 +1,8 @@
+Model Information:
+* title:	Hand soap bottle
+* source:	https://sketchfab.com/3d-models/hand-soap-bottle-a78cfed1e1be461e80a34de466016d69
+* author:	Sousinho (https://sketchfab.com/sousinho)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

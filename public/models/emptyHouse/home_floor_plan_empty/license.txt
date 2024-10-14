@@ -1,0 +1,11 @@
+Model Information:
+* title:	Home Floor Plan (empty)
+* source:	https://sketchfab.com/3d-models/home-floor-plan-empty-658c1aa87c1f4ddabd318c898ecef497
+* author:	colinmansfield (https://sketchfab.com/colinmansfield)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Home Floor Plan (empty)" (https://sketchfab.com/3d-models/home-floor-plan-empty-658c1aa87c1f4ddabd318c898ecef497) by colinmansfield (https://sketchfab.com/colinmansfield) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

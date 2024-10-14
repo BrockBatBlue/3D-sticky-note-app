@@ -1,7 +1,20 @@
+import { Suspense } from "react";
 import "./App.css";
+import MainScene from "./components/MainScene";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 
 function App() {
-  return <></>;
+  return (
+    <Canvas>
+      <Suspense camera={{ position: [-6, 3.9, 6.21] }} fallback={null}>
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[3.3, 1.0, 4.4]} intensity={Math.PI * 2} />
+        <OrbitControls target0={[0, 1, 0]} />
+        <MainScene />
+      </Suspense>
+    </Canvas>
+  );
 }
 
 export default App;
