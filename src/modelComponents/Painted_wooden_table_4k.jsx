@@ -4,16 +4,21 @@ Command: npx gltfjsx@6.5.2 painted_wooden_table_4k.gltf --transform
 Files: painted_wooden_table_4k.gltf [2.83KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\kitchen\painted_wooden_table_4k.gltf\painted_wooden_table_4k-transformed.glb [555.63KB] (-19534%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/painted_wooden_table_4k-transformed.glb')
+export function PaintedTable(props) {
+  const { nodes, materials } = useGLTF(
+    "/painted_wooden_table_4k-transformed.glb"
+  );
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.painted_wooden_table.geometry} material={materials.painted_wooden_table} />
+    <group {...props} dispose={null} scale={0.85}>
+      <mesh
+        geometry={nodes.painted_wooden_table.geometry}
+        material={materials.painted_wooden_table}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/painted_wooden_table_4k-transformed.glb')
+useGLTF.preload("/painted_wooden_table_4k-transformed.glb");
