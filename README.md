@@ -1,12 +1,20 @@
-# Note Taking App
+# Mind Palace 3D Note Taking App
 
-This app is a mind palace-esque note taking app. You can place notes in parts of the house that are relevant to the reminder. The house has all the necessary rooms: 1. Kitchen - think recipes, dinner reminders, outings with friends, and whatever you might stick on your refrigerator as a reminder. 2. Living room - sticky notes can be placed anywhere, so think of that show you want to start with friends or your partner, movie night ideas, gaming ideas, relaxation-focused reminders. That sort of thing. 3. Office - oh anything work related or hobby related 😀 4. Bedroom - Finally getting that super sensitive sleep app, or getting that sunrise alarm clock, or putting a bedtime reminder sticky note. 5. Bathroom - Getting that serum you wanted to try, reminder for self care, bath bombs! 6. Reading room - Starting a book club, researching a topic, enjoying personal time.
+This app is a mind palace-esque note taking app. You can place notes in parts of the house that are relevant to the reminder. The house has all the necessary rooms:
+
+1. Kitchen - think recipes, dinner reminders, outings with friends, and whatever you might stick on your refrigerator as a reminder.
+2. Living room - sticky notes can be placed anywhere, so think of that show you want to start with friends or your partner, movie night ideas, gaming ideas, relaxation-focused reminders. That sort of thing.
+3. Office - oh anything work related or hobby related 😀
+4. Bedroom - Finally getting that super sensitive sleep app, or getting that sunrise alarm clock, or putting a bedtime reminder sticky note.
+5. Bathroom - Getting that serum you wanted to try, reminder for self care, bath bombs! 6. Reading room - Starting a book club, researching a topic, enjoying personal time.
 
 You can use sticky notes for all sorts of things, any of the above mentioned, none of the above, it's yours to enjoy.
 
 ## How it works
 
-The Note Taking App is pretty simple. You just left click to the area in the house you want to get to, move your mouse to the spot you want to add a sticky note and right click to create that sticky note. It will be placed then, so you need to left click on it to open it and write your reminder.
+The Note Taking App is pretty simple.
+
+You just left click to the area in the house you want to get to, move your mouse to the spot you want to add a sticky note and right click to create that sticky note. It will be placed then, so you need to left click on it to open it and write your reminder.
 
 ## Inside your sticky note:
 
