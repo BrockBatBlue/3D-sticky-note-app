@@ -12,7 +12,7 @@ export function PaintedTable(props) {
     "/painted_wooden_table_4k-transformed.glb"
   );
   return (
-    <group {...props} dispose={null} scale={0.85}>
+    <group {...props} dispose={null} scale={0.82}>
       <mesh
         geometry={nodes.painted_wooden_table.geometry}
         material={materials.painted_wooden_table}

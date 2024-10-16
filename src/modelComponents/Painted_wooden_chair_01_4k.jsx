@@ -4,16 +4,21 @@ Command: npx gltfjsx@6.5.2 painted_wooden_chair_01_4k.gltf --transform
 Files: painted_wooden_chair_01_4k.gltf [2.79KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\kitchen\painted_wooden_chair_01_4k.gltf\painted_wooden_chair_01_4k-transformed.glb [519.04KB] (-18504%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/painted_wooden_chair_01_4k-transformed.glb')
+export function PaintedChair(props) {
+  const { nodes, materials } = useGLTF(
+    "/painted_wooden_chair_01_4k-transformed.glb"
+  );
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.painted_wooden_chair_01.geometry} material={materials.painted_wooden_chair_01} />
+    <group {...props} dispose={null} scale={0.92}>
+      <mesh
+        geometry={nodes.painted_wooden_chair_01.geometry}
+        material={materials.painted_wooden_chair_01}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/painted_wooden_chair_01_4k-transformed.glb')
+useGLTF.preload("/painted_wooden_chair_01_4k-transformed.glb");
