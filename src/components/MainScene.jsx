@@ -20,6 +20,10 @@ import { SofaA } from "../modelComponents/Sofa_03_4k";
 import { CoffeeTable } from "../modelComponents/CoffeeTable_01_4k";
 import { GreenChair } from "../modelComponents/GreenChair_01_4k";
 import { ComputerDesk } from "../modelComponents/ComputerDesk";
+import { SteelFrameShelves } from "../modelComponents/Steel_frame_shelves_03_4k";
+import { ModernArmChair } from "../modelComponents/Modern_arm_chair_01_4k";
+import { Jug } from "../modelComponents/Jug_01_4k";
+import { Bed } from "../modelComponents/Bed";
 
 const MainScene = () => {
   return (
@@ -69,7 +73,14 @@ const MainScene = () => {
       <CoffeeTable position={[-2.6, -0.821, 4.3]} />
       <GreenChair rotation-y={2.8} position={[-3.4, -0.821, 5]} />
       <GreenChair rotation-y={-2.8} position={[-1.5, -0.821, 5]} />
-      <ComputerDesk position={[2.5, -0.821, 2.65]} />
+      <SteelFrameShelves rotation-y={4.7} position={[3.7, -0.821, 3.1]} />
+      <ModernArmChair rotation-y={-4.7} position={[3.2, -0.821, 4.92]} />
+      <ArmChair position={[2.6, -0.8201, 2.78]} />
+      <group position={[3.6, -0.821, 4.7]}>
+        <ComputerDesk rotation-y={4.7} />
+        <Jug rotation-y={1} position={[0, 0.75, -0.4]} />
+      </group>
+      <Bed position={[2.6, -0.8201, -1.76]} />
     </>
   );
 };

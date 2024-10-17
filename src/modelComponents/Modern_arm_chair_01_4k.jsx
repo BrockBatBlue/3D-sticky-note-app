@@ -4,17 +4,25 @@ Command: npx gltfjsx@6.5.2 modern_arm_chair_01_4k.gltf --transform
 Files: modern_arm_chair_01_4k.gltf [5.12KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\office\modern_arm_chair_01_4k.gltf\modern_arm_chair_01_4k-transformed.glb [868.29KB] (-16859%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/modern_arm_chair_01_4k-transformed.glb')
+export function ModernArmChair(props) {
+  const { nodes, materials } = useGLTF(
+    "/modern_arm_chair_01_4k-transformed.glb"
+  );
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.Cube007.geometry} material={materials.modern_arm_chair_01_legs} />
-      <mesh geometry={nodes.Cube007_1.geometry} material={materials.modern_arm_chair_01_pillow} />
+    <group {...props} dispose={null} scale={0.76}>
+      <mesh
+        geometry={nodes.Cube007.geometry}
+        material={materials.modern_arm_chair_01_legs}
+      />
+      <mesh
+        geometry={nodes.Cube007_1.geometry}
+        material={materials.modern_arm_chair_01_pillow}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/modern_arm_chair_01_4k-transformed.glb')
+useGLTF.preload("/modern_arm_chair_01_4k-transformed.glb");

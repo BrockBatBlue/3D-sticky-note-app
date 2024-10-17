@@ -4,16 +4,16 @@ Command: npx gltfjsx@6.5.2 jug_01_4k.gltf --transform
 Files: jug_01_4k.gltf [2.61KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\office\jug_01_4k.gltf\jug_01_4k-transformed.glb [153.08KB] (-5765%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/jug_01_4k-transformed.glb')
+export function Jug(props) {
+  const { nodes, materials } = useGLTF("/jug_01_4k-transformed.glb");
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.jug_01.geometry} material={materials.jug_01} />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/jug_01_4k-transformed.glb')
+useGLTF.preload("/jug_01_4k-transformed.glb");

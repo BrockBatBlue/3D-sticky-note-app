@@ -8,16 +8,21 @@ Source: https://sketchfab.com/3d-models/bed-cd0e10e55ebf486eaf9c0a7bcb2cf0ab
 Title: Bed
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/bed-transformed.glb')
+export function Bed(props) {
+  const { nodes, materials } = useGLTF("/bed-transformed.glb");
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.defaultMaterial.geometry} material={materials.Material} rotation={[-Math.PI / 2, 0, 0]} scale={0.1} />
+    <group {...props} dispose={null} scale={0.008}>
+      <mesh
+        geometry={nodes.defaultMaterial.geometry}
+        material={materials.Material}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={0.1}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/bed-transformed.glb')
+useGLTF.preload("/bed-transformed.glb");

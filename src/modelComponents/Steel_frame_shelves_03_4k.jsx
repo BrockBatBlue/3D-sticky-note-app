@@ -4,17 +4,25 @@ Command: npx gltfjsx@6.5.2 steel_frame_shelves_03_4k.gltf --transform
 Files: steel_frame_shelves_03_4k.gltf [9.77KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\office\steel_frame_shelves_03_4k.gltf\steel_frame_shelves_03_4k-transformed.glb [952.85KB] (-9653%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/steel_frame_shelves_03_4k-transformed.glb')
+export function SteelFrameShelves(props) {
+  const { nodes, materials } = useGLTF(
+    "/steel_frame_shelves_03_4k-transformed.glb"
+  );
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.Cube001.geometry} material={materials.steel_frame_shelves_03} />
-      <mesh geometry={nodes.Cube001_1.geometry} material={materials.steel_frame_shelves_03_drawers} />
+    <group {...props} dispose={null} scale={0.6}>
+      <mesh
+        geometry={nodes.Cube001.geometry}
+        material={materials.steel_frame_shelves_03}
+      />
+      <mesh
+        geometry={nodes.Cube001_1.geometry}
+        material={materials.steel_frame_shelves_03_drawers}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/steel_frame_shelves_03_4k-transformed.glb')
+useGLTF.preload("/steel_frame_shelves_03_4k-transformed.glb");
