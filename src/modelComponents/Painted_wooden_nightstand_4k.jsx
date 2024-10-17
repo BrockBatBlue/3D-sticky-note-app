@@ -4,16 +4,21 @@ Command: npx gltfjsx@6.5.2 painted_wooden_nightstand_4k.gltf --transform
 Files: painted_wooden_nightstand_4k.gltf [4.43KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\bedroom\painted_wooden_nightstand_4k.gltf\painted_wooden_nightstand_4k-transformed.glb [843.32KB] (-18937%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/painted_wooden_nightstand_4k-transformed.glb')
+export function BedroomNightStand(props) {
+  const { nodes, materials } = useGLTF(
+    "/painted_wooden_nightstand_4k-transformed.glb"
+  );
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.painted_wooden_nightstand.geometry} material={materials.painted_wooden_nightstand} />
+    <group {...props} dispose={null} scale={0.7}>
+      <mesh
+        geometry={nodes.painted_wooden_nightstand.geometry}
+        material={materials.painted_wooden_nightstand}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/painted_wooden_nightstand_4k-transformed.glb')
+useGLTF.preload("/painted_wooden_nightstand_4k-transformed.glb");

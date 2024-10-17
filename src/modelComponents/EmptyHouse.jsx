@@ -27,10 +27,10 @@ export function EmptyHouse(props) {
           geometry={nodes.Object_4.geometry}
           material={materials.material_0}
         />
-        {/* <mesh
+        <mesh
           geometry={nodes.Object_5.geometry}
           material={materials.material_0}
-        /> */}
+        />
         <mesh
           geometry={nodes.Object_6.geometry}
           material={materials.material_0}

@@ -4,16 +4,21 @@ Command: npx gltfjsx@6.5.2 vintage_wooden_drawer_01_4k.gltf --transform
 Files: vintage_wooden_drawer_01_4k.gltf [11.49KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\bedroom\vintage_wooden_drawer_01_4k.gltf\vintage_wooden_drawer_01_4k-transformed.glb [633.2KB] (-5411%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/vintage_wooden_drawer_01_4k-transformed.glb')
+export function BedroomDrawer(props) {
+  const { nodes, materials } = useGLTF(
+    "/vintage_wooden_drawer_01_4k-transformed.glb"
+  );
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.vintage_wooden_drawer_01_body.geometry} material={materials.vintage_wooden_drawer_01} />
+    <group {...props} dispose={null} scale={1.2}>
+      <mesh
+        geometry={nodes.vintage_wooden_drawer_01_body.geometry}
+        material={materials.vintage_wooden_drawer_01}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/vintage_wooden_drawer_01_4k-transformed.glb')
+useGLTF.preload("/vintage_wooden_drawer_01_4k-transformed.glb");

@@ -24,6 +24,9 @@ import { SteelFrameShelves } from "../modelComponents/Steel_frame_shelves_03_4k"
 import { ModernArmChair } from "../modelComponents/Modern_arm_chair_01_4k";
 import { Jug } from "../modelComponents/Jug_01_4k";
 import { Bed } from "../modelComponents/Bed";
+import { BedroomDrawer } from "../modelComponents/Vintage_wooden_drawer_01_4k";
+import { BedroomNightStand } from "../modelComponents/Painted_wooden_nightstand_4k";
+import { AlarmClock } from "../modelComponents/Alarm_clock_01_4k";
 
 const MainScene = () => {
   return (
@@ -33,7 +36,7 @@ const MainScene = () => {
       <PaintedChair position={[-2.6, -0.821, -0.1]} rotation-y={[2.8]} />
       <KitchenPlant position={[-3.7, -0.032, -0.35]} />
       <ChessSet position={[-3.2, -0.032, -0.5]} />
-      <ArmChair rotation-y={3.14} position={[-2, -0.8201, 1.94]} />
+      <ArmChair rotation-y={-4.7} position={[-3.5, -0.8201, 1]} />
       <ArmChair rotation-y={4.7} position={[0.32, -0.8201, 1.9]} />
       <group position={[0.56, -0.8201, 0.7]}>
         <ModernWoodenCabinet rotation-y={4.71} />
@@ -51,7 +54,7 @@ const MainScene = () => {
         <Kiwi position={[0.03, 0.02, 0.01]} rotation-x={1} />
         <Pomegranate position={[-0.078, 0.02, 0]} />
       </group>
-      <group position={[-3.3, -0.821, 2.42]}>
+      <group position={[-2.74, -0.821, 2.37]}>
         <Shelf rotation-y={3.14} />
         <group rotation-y={3.14}>
           <Books position={[-0.2, 0.146, 0.15]} />
@@ -81,6 +84,12 @@ const MainScene = () => {
         <Jug rotation-y={1} position={[0, 0.75, -0.4]} />
       </group>
       <Bed position={[2.6, -0.8201, -1.76]} />
+      <BedroomDrawer rotation-y={-4.7} position={[1.15, -0.8201, -1.76]} />
+      <group position={[1.7, -0.8201, -2.56]}>
+        <BedroomNightStand />
+        <AlarmClock rotation-y={-4.4} position={[0, 0.432, 0.03]} />
+      </group>
+      <BedroomNightStand position={[3.5, -0.8201, -2.56]} />
     </>
   );
 };
