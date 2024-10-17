@@ -4,18 +4,29 @@ Command: npx gltfjsx@6.5.2 chess_set_4k.gltf --transform
 Files: chess_set_4k.gltf [53.74KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\readingRoom\chess_set_4k.gltf\chess_set_4k-transformed.glb [1.51MB] (-2705%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/chess_set_4k-transformed.glb')
+export function ChessSet(props) {
+  const { nodes, materials } = useGLTF("/chess_set_4k-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.piece_rook_white_01.geometry} material={materials.chess_set_pieces_white} position={[0.203, 0.017, -0.203]} />
-      <mesh geometry={nodes.board.geometry} material={materials.chess_set_board} />
-      <mesh geometry={nodes.piece_rook_black_01.geometry} material={materials.chess_set_pieces_black} position={[-0.203, 0.017, 0.202]} />
+      <mesh
+        geometry={nodes.piece_rook_white_01.geometry}
+        material={materials.chess_set_pieces_white}
+        position={[0.203, 0.017, -0.203]}
+      />
+      <mesh
+        geometry={nodes.board.geometry}
+        material={materials.chess_set_board}
+      />
+      <mesh
+        geometry={nodes.piece_rook_black_01.geometry}
+        material={materials.chess_set_pieces_black}
+        position={[-0.203, 0.017, 0.202]}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/chess_set_4k-transformed.glb')
+useGLTF.preload("/chess_set_4k-transformed.glb");

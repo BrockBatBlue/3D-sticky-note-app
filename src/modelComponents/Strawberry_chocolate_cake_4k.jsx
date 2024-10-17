@@ -4,16 +4,21 @@ Command: npx gltfjsx@6.5.2 strawberry_chocolate_cake_4k.gltf --transform
 Files: strawberry_chocolate_cake_4k.gltf [2.93KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\kitchen\strawberry_chocolate_cake_4k.gltf\strawberry_chocolate_cake_4k-transformed.glb [1.35MB] (-45903%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/strawberry_chocolate_cake_4k-transformed.glb')
+export function Cake(props) {
+  const { nodes, materials } = useGLTF(
+    "/strawberry_chocolate_cake_4k-transformed.glb"
+  );
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.strawberry_chocolate_cake.geometry} material={materials.strawberry_chocolate_cake} />
+      <mesh
+        geometry={nodes.strawberry_chocolate_cake.geometry}
+        material={materials.strawberry_chocolate_cake}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/strawberry_chocolate_cake_4k-transformed.glb')
+useGLTF.preload("/strawberry_chocolate_cake_4k-transformed.glb");

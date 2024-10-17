@@ -4,17 +4,29 @@ Command: npx gltfjsx@6.5.2 horse_statue_01_4k.gltf --transform
 Files: horse_statue_01_4k.gltf [5.86KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\readingRoom\horse_statue_01_4k.gltf\horse_statue_01_4k-transformed.glb [773.5KB] (-13100%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/horse_statue_01_4k-transformed.glb')
+export function HorseStatue(props) {
+  const { nodes, materials } = useGLTF("/horse_statue_01_4k-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh name="Plane" geometry={nodes.Plane.geometry} material={materials.horse_statue_01} morphTargetDictionary={nodes.Plane.morphTargetDictionary} morphTargetInfluences={nodes.Plane.morphTargetInfluences} />
-      <mesh name="Plane_1" geometry={nodes.Plane_1.geometry} material={materials.horse_statue_01} morphTargetDictionary={nodes.Plane_1.morphTargetDictionary} morphTargetInfluences={nodes.Plane_1.morphTargetInfluences} />
+      <mesh
+        name="Plane"
+        geometry={nodes.Plane.geometry}
+        material={materials.horse_statue_01}
+        morphTargetDictionary={nodes.Plane.morphTargetDictionary}
+        morphTargetInfluences={nodes.Plane.morphTargetInfluences}
+      />
+      <mesh
+        name="Plane_1"
+        geometry={nodes.Plane_1.geometry}
+        material={materials.horse_statue_01}
+        morphTargetDictionary={nodes.Plane_1.morphTargetDictionary}
+        morphTargetInfluences={nodes.Plane_1.morphTargetInfluences}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/horse_statue_01_4k-transformed.glb')
+useGLTF.preload("/horse_statue_01_4k-transformed.glb");

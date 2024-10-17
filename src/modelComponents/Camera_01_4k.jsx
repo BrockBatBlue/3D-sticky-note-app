@@ -4,19 +4,31 @@ Command: npx gltfjsx@6.5.2 Camera_01_4k.gltf --transform
 Files: Camera_01_4k.gltf [9.89KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\readingRoom\Camera_01_4k.gltf\Camera_01_4k-transformed.glb [2.3MB] (-23166%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/Camera_01_4k-transformed.glb')
+export function VintageCamera(props) {
+  const { nodes, materials } = useGLTF("/Camera_01_4k-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Camera_01_strap.geometry} material={materials.Camera_01_strap} />
-      <mesh geometry={nodes.Mesh016.geometry} material={materials.Camera_01_lens_body} />
-      <mesh geometry={nodes.Mesh016_1.geometry} material={materials.Camera_01_lens} />
-      <mesh geometry={nodes.Mesh016_2.geometry} material={materials.Camera_01_body} />
+      <mesh
+        geometry={nodes.Camera_01_strap.geometry}
+        material={materials.Camera_01_strap}
+      />
+      <mesh
+        geometry={nodes.Mesh016.geometry}
+        material={materials.Camera_01_lens_body}
+      />
+      <mesh
+        geometry={nodes.Mesh016_1.geometry}
+        material={materials.Camera_01_lens}
+      />
+      <mesh
+        geometry={nodes.Mesh016_2.geometry}
+        material={materials.Camera_01_body}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/Camera_01_4k-transformed.glb')
+useGLTF.preload("/Camera_01_4k-transformed.glb");

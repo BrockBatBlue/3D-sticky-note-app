@@ -4,16 +4,19 @@ Command: npx gltfjsx@6.5.2 carrot_cake_4k.gltf --transform
 Files: carrot_cake_4k.gltf [2.68KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\kitchen\carrot_cake_4k.gltf\carrot_cake_4k-transformed.glb [1.63MB] (-60738%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/carrot_cake_4k-transformed.glb')
+export function CarrotCake(props) {
+  const { nodes, materials } = useGLTF("/carrot_cake_4k-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.carrot_cake.geometry} material={materials.carrot_cake} />
+      <mesh
+        geometry={nodes.carrot_cake.geometry}
+        material={materials.carrot_cake}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/carrot_cake_4k-transformed.glb')
+useGLTF.preload("/carrot_cake_4k-transformed.glb");

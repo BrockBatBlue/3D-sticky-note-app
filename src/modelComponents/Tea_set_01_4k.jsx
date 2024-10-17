@@ -4,16 +4,20 @@ Command: npx gltfjsx@6.5.2 tea_set_01_4k.gltf --transform
 Files: tea_set_01_4k.gltf [15.84KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\readingRoom\tea_set_01_4k.gltf\tea_set_01_4k-transformed.glb [390.48KB] (-2365%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/tea_set_01_4k-transformed.glb')
+export function TeaSet(props) {
+  const { nodes, materials } = useGLTF("/tea_set_01_4k-transformed.glb");
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.tea_set_01_plate_large_square_01.geometry} material={materials.tea_set_01} position={[-0.347, 0, -0.189]} />
+    <group {...props} dispose={null} scale={0.7}>
+      <mesh
+        geometry={nodes.tea_set_01_plate_large_square_01.geometry}
+        material={materials.tea_set_01}
+        position={[-0.347, 0, -0.189]}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/tea_set_01_4k-transformed.glb')
+useGLTF.preload("/tea_set_01_4k-transformed.glb");

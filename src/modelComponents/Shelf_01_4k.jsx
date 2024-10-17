@@ -4,16 +4,16 @@ Command: npx gltfjsx@6.5.2 Shelf_01_4k.gltf --transform
 Files: Shelf_01_4k.gltf [2.62KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\readingRoom\Shelf_01_4k.gltf\Shelf_01_4k-transformed.glb [1.08MB] (-41261%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/Shelf_01_4k-transformed.glb')
+export function Shelf(props) {
+  const { nodes, materials } = useGLTF("/Shelf_01_4k-transformed.glb");
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={1.04}>
       <mesh geometry={nodes.Shelf_01.geometry} material={materials.Shelf_01} />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/Shelf_01_4k-transformed.glb')
+useGLTF.preload("/Shelf_01_4k-transformed.glb");

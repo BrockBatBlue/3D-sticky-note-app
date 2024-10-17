@@ -4,19 +4,25 @@ Command: npx gltfjsx@6.5.2 wooden_lantern_01_4k.gltf --transform
 Files: wooden_lantern_01_4k.gltf [9.54KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\kitchen\wooden_lantern_01_4k.gltf\wooden_lantern_01_4k-transformed.glb [991.65KB] (-10295%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/wooden_lantern_01_4k-transformed.glb')
+export function WoodenLantern(props) {
+  const { nodes, materials } = useGLTF("/wooden_lantern_01_4k-transformed.glb");
   return (
     <group {...props} dispose={null}>
       <group position={[0, 0.001, 0]}>
-        <mesh geometry={nodes.Cube001.geometry} material={materials.wooden_lantern_01} />
-        <mesh geometry={nodes.Cube001_1.geometry} material={materials.wooden_lantern_01_glass} />
+        <mesh
+          geometry={nodes.Cube001.geometry}
+          material={materials.wooden_lantern_01}
+        />
+        <mesh
+          geometry={nodes.Cube001_1.geometry}
+          material={materials.wooden_lantern_01_glass}
+        />
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/wooden_lantern_01_4k-transformed.glb')
+useGLTF.preload("/wooden_lantern_01_4k-transformed.glb");

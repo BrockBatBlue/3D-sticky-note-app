@@ -4,16 +4,19 @@ Command: npx gltfjsx@6.5.2 ArmChair_01_4k.gltf --transform
 Files: ArmChair_01_4k.gltf [2.64KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\readingRoom\ArmChair_01_4k.gltf\ArmChair_01_4k-transformed.glb [1.4MB] (-52858%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/ArmChair_01_4k-transformed.glb')
+export function ArmChair(props) {
+  const { nodes, materials } = useGLTF("/ArmChair_01_4k-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.ArmChair_01.geometry} material={materials.Armchair_01} />
+      <mesh
+        geometry={nodes.ArmChair_01.geometry}
+        material={materials.Armchair_01}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/ArmChair_01_4k-transformed.glb')
+useGLTF.preload("/ArmChair_01_4k-transformed.glb");

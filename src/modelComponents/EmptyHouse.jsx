@@ -27,34 +27,40 @@ export function EmptyHouse(props) {
           geometry={nodes.Object_4.geometry}
           material={materials.material_0}
         />
-        <mesh
+        {/* <mesh
           geometry={nodes.Object_5.geometry}
           material={materials.material_0}
-        />
+        /> */}
         <mesh
           geometry={nodes.Object_6.geometry}
           material={materials.material_0}
         />
+        {/* cabinets */}
         <mesh
           geometry={nodes.Object_7.geometry}
           material={materials.material_0}
         />
+        {/* doors */}
         <mesh
           geometry={nodes.Object_8.geometry}
           material={materials.material_0}
         />
+        {/* sinks */}
         <mesh
           geometry={nodes.Object_9.geometry}
           material={materials.material_0}
         />
+        {/* door frames */}
         <mesh
           geometry={nodes.Object_10.geometry}
           material={materials.material_0}
         />
+        {/* walls */}
         <mesh
           geometry={nodes.Object_11.geometry}
           material={materials.material_0}
         />
+        {/* floor */}
       </group>
     </group>
   );
