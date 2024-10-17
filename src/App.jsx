@@ -7,7 +7,8 @@ import { OrbitControls } from "@react-three/drei";
 function App() {
   return (
     <Canvas>
-      <Suspense camera={{ position: [-6, 3.9, 6.21] }} fallback={null}>
+      <ambientLight intensity={0.35} />
+      <Suspense camera={{ position: [0, 3.9, 2] }} fallback={null}>
         <ambientLight intensity={0.35} />
         <directionalLight position={[0, 6.0, 4.4]} intensity={Math.PI * 2} />
         <OrbitControls target0={[0, 1, 0]} />

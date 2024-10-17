@@ -35,7 +35,7 @@ export function EmptyHouse(props) {
           geometry={nodes.Object_6.geometry}
           material={materials.material_0}
         />
-        {/* cabinets */}
+        {/* cabinets, window frames, and shower basin */}
         <mesh
           geometry={nodes.Object_7.geometry}
           material={materials.material_0}
@@ -57,6 +57,7 @@ export function EmptyHouse(props) {
         />
         {/* walls */}
         <mesh
+          material-color={"pink"}
           geometry={nodes.Object_11.geometry}
           material={materials.material_0}
         />

@@ -27,6 +27,7 @@ import { Bed } from "../modelComponents/Bed";
 import { BedroomDrawer } from "../modelComponents/Vintage_wooden_drawer_01_4k";
 import { BedroomNightStand } from "../modelComponents/Painted_wooden_nightstand_4k";
 import { AlarmClock } from "../modelComponents/Alarm_clock_01_4k";
+import WoodLivingFloor from "./LivingRoomDiningRoomFloor";
 
 const MainScene = () => {
   return (
@@ -90,6 +91,8 @@ const MainScene = () => {
         <AlarmClock rotation-y={-4.4} position={[0, 0.432, 0.03]} />
       </group>
       <BedroomNightStand position={[3.5, -0.8201, -2.56]} />
+      {/* floor textures */}
+      <WoodLivingFloor />
     </>
   );
 };
