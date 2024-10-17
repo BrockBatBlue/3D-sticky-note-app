@@ -4,16 +4,19 @@ Command: npx gltfjsx@6.5.2 CoffeeTable_01_4k.gltf --transform
 Files: CoffeeTable_01_4k.gltf [3.18KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\living room\CoffeeTable_01_4k.gltf\CoffeeTable_01_4k-transformed.glb [827.93KB] (-25936%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/CoffeeTable_01_4k-transformed.glb')
+export function CoffeeTable(props) {
+  const { nodes, materials } = useGLTF("/CoffeeTable_01_4k-transformed.glb");
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.CoffeeTable_01.geometry} material={materials.CoffeeTable_01} />
+    <group {...props} dispose={null} scale={0.75}>
+      <mesh
+        geometry={nodes.CoffeeTable_01.geometry}
+        material={materials.CoffeeTable_01}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/CoffeeTable_01_4k-transformed.glb')
+useGLTF.preload("/CoffeeTable_01_4k-transformed.glb");

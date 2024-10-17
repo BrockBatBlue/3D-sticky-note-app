@@ -16,6 +16,10 @@ import { ModernWoodenCabinet } from "../modelComponents/Modern_wooden_cabinet_4k
 import { TeaSet } from "../modelComponents/Tea_set_01_4k";
 import { ChessSet } from "../modelComponents/Chess_set_4k";
 import { CarrotCake } from "../modelComponents/Carrot_cake_4k";
+import { SofaA } from "../modelComponents/Sofa_03_4k";
+import { CoffeeTable } from "../modelComponents/CoffeeTable_01_4k";
+import { GreenChair } from "../modelComponents/GreenChair_01_4k";
+import { ComputerDesk } from "../modelComponents/ComputerDesk";
 
 const MainScene = () => {
   return (
@@ -61,6 +65,11 @@ const MainScene = () => {
           <Books position={[-0.42, 1.86, 0.15]} />
         </group>
       </group>
+      <SofaA position={[-2.62, -0.821, 3.05]} />
+      <CoffeeTable position={[-2.6, -0.821, 4.3]} />
+      <GreenChair rotation-y={2.8} position={[-3.4, -0.821, 5]} />
+      <GreenChair rotation-y={-2.8} position={[-1.5, -0.821, 5]} />
+      <ComputerDesk position={[2.5, -0.821, 2.65]} />
     </>
   );
 };

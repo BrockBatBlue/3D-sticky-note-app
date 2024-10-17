@@ -8,16 +8,20 @@ Source: https://sketchfab.com/3d-models/living-room-chair-6fab01d8db574699b35303
 Title: Living Room Chair
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/livingRoomChair-transformed.glb')
+export function LivingRoomChair(props) {
+  const { nodes, materials } = useGLTF("/livingRoomChair-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.meshes0__0.geometry} material={materials.meshes0__0} scale={0.01} />
+      <mesh
+        geometry={nodes.meshes0__0.geometry}
+        material={materials.meshes0__0}
+        scale={0.01}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/livingRoomChair-transformed.glb')
+useGLTF.preload("/livingRoomChair-transformed.glb");

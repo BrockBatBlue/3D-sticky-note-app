@@ -8,16 +8,21 @@ Source: https://sketchfab.com/3d-models/computer-desk-office-workstation-desk-ab
 Title: Computer Desk Office Workstation Desk
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/computerDesk-transformed.glb')
+export function ComputerDesk(props) {
+  const { nodes, materials } = useGLTF("/computerDesk-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.polySurface56_lambert2_0.geometry} material={materials.lambert2} rotation={[-Math.PI / 2, 0, 0]} scale={0.01} />
+      <mesh
+        geometry={nodes.polySurface56_lambert2_0.geometry}
+        material={materials.lambert2}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={0.01}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/computerDesk-transformed.glb')
+useGLTF.preload("/computerDesk-transformed.glb");
