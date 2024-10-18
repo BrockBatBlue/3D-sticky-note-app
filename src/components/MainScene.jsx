@@ -29,14 +29,11 @@ import { BedroomNightStand } from "../modelComponents/Painted_wooden_nightstand_
 import { AlarmClock } from "../modelComponents/Alarm_clock_01_4k";
 import WoodLivingFloor from "./LivingRoomDiningRoomFloor";
 import OuterWalls from "./TransparentOuterWalls";
-import OuterWallTwo from "./TransparentOuterWallTwo";
-import OuterWallThree from "./TransparentOuterWallThree";
-import OuterWallFour from "./TransparentOuterWallFour";
 
 const MainScene = () => {
   return (
     <>
-      <EmptyHouse />
+      {/* <EmptyHouse /> */}
       <PaintedTable position={[-2.85, -0.821, -0.57]} />
       <PaintedChair position={[-2.6, -0.821, -0.1]} rotation-y={[2.8]} />
       <KitchenPlant position={[-3.7, -0.032, -0.35]} />
@@ -97,14 +94,8 @@ const MainScene = () => {
       <BedroomNightStand position={[3.5, -0.8201, -2.56]} />
       {/* floor textures */}
       <WoodLivingFloor />
-      {/* Outer Wall 1 */}
+      {/* Outer Wall s */}
       <OuterWalls />
-      {/* Outer Wall 2 */}
-      <OuterWallTwo />
-      {/* Outer Wall 3 */}
-      <OuterWallThree />
-      {/* Outer Wall 4 */}
-      <OuterWallFour />
     </>
   );
 };

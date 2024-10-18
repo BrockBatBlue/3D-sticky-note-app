@@ -2,8 +2,8 @@ import { MeshTransmissionMaterial } from "@react-three/drei";
 const OuterWalls = () => {
   return (
     <>
-      <mesh position={[-4.12, 0.7, 0.44]}>
-        <boxGeometry args={[0.4, 3, 10.9]} />
+      <mesh position={[0, 1.5, 0]}>
+        <boxGeometry args={[8, 5, 12]} />
         <MeshTransmissionMaterial
           backside
           backsideThickness={5}
