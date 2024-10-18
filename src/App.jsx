@@ -11,9 +11,9 @@ function App() {
       <directionalLight position={[1, 8, 1]} intensity={4} />
       <ambientLight intensity={5} />
       <Environment
-        files="/textures/background/sky-7218043_1280.jpg"
+        files="/textures/background/kloofendal_48d_partly_cloudy_puresky_4k.hdr"
         background
-        backgroundBlurriness={0.3}
+        backgroundBlurriness={0.065}
       />
       <Suspense camera={{ position: [0, 3.9, 2] }} fallback={null}>
         <ambientLight intensity={0.35} />
