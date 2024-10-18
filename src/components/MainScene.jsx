@@ -28,6 +28,10 @@ import { BedroomDrawer } from "../modelComponents/Vintage_wooden_drawer_01_4k";
 import { BedroomNightStand } from "../modelComponents/Painted_wooden_nightstand_4k";
 import { AlarmClock } from "../modelComponents/Alarm_clock_01_4k";
 import WoodLivingFloor from "./LivingRoomDiningRoomFloor";
+import OuterWalls from "./TransparentOuterWalls";
+import OuterWallTwo from "./TransparentOuterWallTwo";
+import OuterWallThree from "./TransparentOuterWallThree";
+import OuterWallFour from "./TransparentOuterWallFour";
 
 const MainScene = () => {
   return (
@@ -93,6 +97,14 @@ const MainScene = () => {
       <BedroomNightStand position={[3.5, -0.8201, -2.56]} />
       {/* floor textures */}
       <WoodLivingFloor />
+      {/* Outer Wall 1 */}
+      <OuterWalls />
+      {/* Outer Wall 2 */}
+      <OuterWallTwo />
+      {/* Outer Wall 3 */}
+      <OuterWallThree />
+      {/* Outer Wall 4 */}
+      <OuterWallFour />
     </>
   );
 };
