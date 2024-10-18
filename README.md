@@ -66,7 +66,7 @@ When you want to load your last save, just click the load button in the opening 
 
 # Model Credits
 
-- Empty House: This work is based on "Home Floor Plan (empty)" (https://sketchfab.com/3d-models/home-floor-plan-empty-658c1aa87c1f4ddabd318c898ecef497) by colinmansfield (https://sketchfab.com/colinmansfield) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+- Modern Kitchen model set: This work is based on "Kitchen Design Set V.001" (https://sketchfab.com/3d-models/kitchen-design-set-v001-47e74e0fab8f43a1b88cbfc0d7f9989f) by Truong Arch (https://sketchfab.com/kiemtruongkts) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 
 Bed model: This work is based on "Bed" (https://sketchfab.com/3d-models/bed-cd0e10e55ebf486eaf9c0a7bcb2cf0ab) by Dmitry Susidko (https://sketchfab.com/susidko.dima) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 

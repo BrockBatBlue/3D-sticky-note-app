@@ -29,15 +29,33 @@ import { BedroomNightStand } from "../modelComponents/Painted_wooden_nightstand_
 import { AlarmClock } from "../modelComponents/Alarm_clock_01_4k";
 import WoodLivingFloor from "./LivingRoomDiningRoomFloor";
 import OuterWalls from "./TransparentOuterWalls";
+import { ModernKitchen } from "../modelComponents/ModernKitchen";
 
 const MainScene = () => {
   return (
     <>
       {/* <EmptyHouse /> */}
-      <PaintedTable position={[-2.85, -0.821, -0.57]} />
-      <PaintedChair position={[-2.6, -0.821, -0.1]} rotation-y={[2.8]} />
-      <KitchenPlant position={[-3.7, -0.032, -0.35]} />
-      <ChessSet position={[-3.2, -0.032, -0.5]} />
+      <ModernKitchen
+        rotation-y={1.57}
+        scale={0.025}
+        position={[-2.2, -0.821, 4.5]}
+      />
+      <group position={[-2.1, -0.821, -0.9]}>
+        <PaintedTable />
+        <PaintedChair rotation-y={[2.8]} position={[0, 0, 0.4]} />
+        <KitchenPlant position={[-0.8, 0.788, -0.2]} />
+        <ChessSet position={[0, 0.788, 0]} />
+        <group position={[0.7, 0.788, -0.2]}>
+          <WoodenPlate />
+          <Cake position={[0, 0.03, 0]} />
+        </group>
+        <group position={[0.5, 0.788, 0.25]}>
+          <WoodenPlate />
+          <Kiwi position-y={[0.02]} rotation-x={-1} />
+          <Kiwi position={[0.03, 0.02, 0.01]} rotation-x={1} />
+          <Pomegranate position={[-0.078, 0.02, 0]} />
+        </group>
+      </group>
       <ArmChair rotation-y={-4.7} position={[-3.5, -0.8201, 1]} />
       <ArmChair rotation-y={4.7} position={[0.32, -0.8201, 1.9]} />
       <group position={[0.56, -0.8201, 0.7]}>
@@ -45,16 +63,6 @@ const MainScene = () => {
         <TeaSet rotation-y={4.71} position={[-0.03, 0.4148, 0.37]} />
         <WoodenPlate position={[0, 0.4148, -0.4]} />
         <CarrotCake position={[0, 0.44, -0.4]} />
-      </group>
-      <group position={[-2.1, -0.032, -0.75]}>
-        <WoodenPlate />
-        <Cake position={[0, 0.03, 0]} />
-      </group>
-      <group position={[-2.5, -0.032, -0.5]}>
-        <WoodenPlate />
-        <Kiwi position-y={[0.02]} rotation-x={-1} />
-        <Kiwi position={[0.03, 0.02, 0.01]} rotation-x={1} />
-        <Pomegranate position={[-0.078, 0.02, 0]} />
       </group>
       <group position={[-2.74, -0.821, 2.37]}>
         <Shelf rotation-y={3.14} />
