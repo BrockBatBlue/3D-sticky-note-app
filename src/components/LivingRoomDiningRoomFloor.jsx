@@ -1,3 +1,5 @@
+import * as THREE from "three";
+import React from "react";
 import { useTexture } from "@react-three/drei";
 
 const WoodLivingFloor = () => {
@@ -9,6 +11,26 @@ const WoodLivingFloor = () => {
       "/textures/floors/older-wood-flooring-ue/older-wood-flooring_roughness.png",
       "/textures/floors/older-wood-flooring-ue/older-wood-flooring_ao.png",
     ]);
+  colorMap.wrapS = THREE.RepeatWrapping;
+  colorMap.wrapT = THREE.RepeatWrapping;
+  colorMap.repeat.set(3, 3);
+
+  displacementMap.wrapS = THREE.RepeatWrapping;
+  displacementMap.wrapT = THREE.RepeatWrapping;
+  displacementMap.repeat.set(3, 3);
+
+  normalMap.wrapS = THREE.RepeatWrapping;
+  normalMap.wrapT = THREE.RepeatWrapping;
+  normalMap.repeat.set(3, 3);
+
+  roughnessMap.wrapS = THREE.RepeatWrapping;
+  roughnessMap.wrapT = THREE.RepeatWrapping;
+  roughnessMap.repeat.set(3, 3);
+
+  aoMap.wrapS = THREE.RepeatWrapping;
+  aoMap.wrapT = THREE.RepeatWrapping;
+  aoMap.repeat.set(3, 3);
+
   return (
     <>
       <ambientLight intensity={0.15} />
