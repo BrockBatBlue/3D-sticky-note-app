@@ -146,6 +146,18 @@ const MainScene = () => {
         <WoodLivingFloor />
         {/* Outer Wall s */}
         <OuterWalls />
+        <ColliderBox position={[-2.2, -0.42, -2.65]} scale={[3.5, 0.75, 0.6]} />
+        <ColliderBox
+          position={[-3.1, -0.42, -5.345]}
+          scale={[1.5, 0.75, 0.6]}
+        />
+        <ColliderBox position={[-3.55, -0.42, -4]} scale={[0.6, 0.75, 2.09]} />
+        <ColliderBox
+          position={[-1.6, 0.39, -5.345]}
+          scale={[1.475, 2.4, 0.6]}
+        />
+        <ColliderBox position={[-3.65, 1.1, -4]} scale={[0.4, 0.9, 3.3]} />
+        <ColliderBox position={[-2.9, 1.18, -5.42]} scale={[1.2, 0.75, 0.42]} />
       </Physics>
     </>
   );
