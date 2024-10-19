@@ -10,6 +10,8 @@ Title: Shower Cabin
 
 import React from "react";
 import { useGLTF } from "@react-three/drei";
+import ColliderBox from "../components/ColliderBox";
+import { Physics } from "@react-three/cannon";
 
 export function Shower(props) {
   const { nodes, materials } = useGLTF("/shower-transformed.glb");
@@ -40,6 +42,9 @@ export function Shower(props) {
         material={materials.m_walls_frame_handle_drain}
         rotation={[-Math.PI / 2, 0, 0]}
       />
+      <Physics>
+        <ColliderBox position={[0.34, 0.6, 0.005]} scale={[1.32, 2.25, 1.03]} />
+      </Physics>
     </group>
   );
 }

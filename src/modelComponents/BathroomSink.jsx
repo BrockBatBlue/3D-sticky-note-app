@@ -10,6 +10,8 @@ Title: dlX - Bathroom Sink (Puris Aspekt)
 
 import React from "react";
 import { useGLTF } from "@react-three/drei";
+import ColliderBox from "../components/ColliderBox";
+import { Physics } from "@react-three/cannon";
 
 export function BathroomSink(props) {
   const { nodes, materials } = useGLTF("/bathroomSink-transformed.glb");
@@ -35,6 +37,16 @@ export function BathroomSink(props) {
         material={materials.Chrome_light}
         scale={0.01}
       />
+      <Physics>
+        <ColliderBox
+          position={[-0.25, 0.476, 0.005]}
+          scale={[0.71, 0.95, 0.512]}
+        />
+        <ColliderBox
+          position={[0.405, 0.411, 0.005]}
+          scale={[0.6, 0.827, 0.512]}
+        />
+      </Physics>
     </group>
   );
 }

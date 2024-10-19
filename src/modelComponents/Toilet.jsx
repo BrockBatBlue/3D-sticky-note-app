@@ -10,6 +10,8 @@ Title: Toilet
 
 import React from "react";
 import { useGLTF } from "@react-three/drei";
+import ColliderBox from "../components/ColliderBox";
+import { Physics } from "@react-three/cannon";
 
 export function Toilet(props) {
   const { nodes, materials } = useGLTF("/toilet-transformed.glb");
@@ -20,6 +22,10 @@ export function Toilet(props) {
         material={materials.Toilet}
         scale={0.01}
       />
+      <Physics>
+        <ColliderBox position={[0, 0.95, 0]} scale={[0.5, 1.9, 0.3]} />
+        <ColliderBox position={[0, 0.37, 0.36]} scale={[0.5, 0.73, 0.42]} />
+      </Physics>
     </group>
   );
 }

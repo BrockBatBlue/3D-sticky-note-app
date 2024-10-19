@@ -40,8 +40,16 @@ import { Folders } from "../modelComponents/Folders";
 import { Suitcase } from "../modelComponents/Vintage_suitcase_4k";
 import { ShagRug } from "../modelComponents/DescansoShagRug";
 import { BathroomRug } from "../modelComponents/Bathroom_rug";
+import { Physics } from "@react-three/cannon";
+import ColliderBox from "./ColliderBox";
 
 const MainScene = () => {
+  // const gravity = useControls("Gravity", {
+  //   x: { value: 0, min: -10, max: 10, step: 0.1 },
+  //   y: { value: -9.8, min: -10, max: 10, step: 0.1 },
+  //   z: { value: 0, min: -10, max: 10, step: 0.1 },
+  // });
+
   return (
     <>
       {/* <EmptyHouse /> */}
@@ -134,9 +142,11 @@ const MainScene = () => {
         <BathroomRug position={[3.56, -1.48, -0.95]} />
       </group>
       {/* floor textures */}
-      <WoodLivingFloor />
-      {/* Outer Wall s */}
-      <OuterWalls />
+      <Physics>
+        <WoodLivingFloor />
+        {/* Outer Wall s */}
+        <OuterWalls />
+      </Physics>
     </>
   );
 };

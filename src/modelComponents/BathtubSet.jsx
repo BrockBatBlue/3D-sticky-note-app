@@ -10,6 +10,8 @@ Title: Bathroom asset part 4
 
 import React from "react";
 import { useGLTF } from "@react-three/drei";
+import ColliderBox from "../components/ColliderBox";
+import { Physics } from "@react-three/cannon";
 
 export function BathtubSet(props) {
   const { nodes, materials } = useGLTF("/bathtubSet-transformed.glb");
@@ -47,6 +49,13 @@ export function BathtubSet(props) {
         position={[1.385, -0.962, 3.157]}
         scale={1.995}
       />
+      <Physics>
+        <ColliderBox position={[1.2, -1.2, 3.1]} scale={[1, 0.6, 1.53]} />
+        <ColliderBox
+          position={[1.48, -0.745, 3.13]}
+          scale={[0.25, 1.5, 1.27]}
+        />
+      </Physics>
     </group>
   );
 }
