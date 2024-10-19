@@ -8,16 +8,22 @@ Source: https://sketchfab.com/3d-models/bathroom-rug-two-3481214361e94161b6108ed
 Title: Bathroom Rug Two
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/bathroom_rug-transformed.glb')
+export function BathroomRug(props) {
+  const { nodes, materials } = useGLTF("/bathroom_rug-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes['ChamferBox002_01_-_Default_0'].geometry} material={materials['01_-_Default']} position={[0.937, 0, 0]} rotation={[-Math.PI / 2, 0, 0]} scale={[0.025, 0.017, 0.007]} />
+      <mesh
+        geometry={nodes["ChamferBox002_01_-_Default_0"].geometry}
+        material={materials["01_-_Default"]}
+        position={[0.937, 0, 0]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={[0.025, 0.017, 0.007]}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/bathroom_rug-transformed.glb')
+useGLTF.preload("/bathroom_rug-transformed.glb");

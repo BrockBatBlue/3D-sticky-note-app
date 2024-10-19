@@ -30,6 +30,16 @@ import { AlarmClock } from "../modelComponents/Alarm_clock_01_4k";
 import WoodLivingFloor from "./LivingRoomDiningRoomFloor";
 import OuterWalls from "./TransparentOuterWalls";
 import { ModernKitchen } from "../modelComponents/ModernKitchen";
+import { BathtubSet } from "../modelComponents/BathtubSet";
+import { Toilet } from "../modelComponents/Toilet";
+import { BathroomSink } from "../modelComponents/BathroomSink";
+import { Shower } from "../modelComponents/Shower";
+import { Tv } from "../modelComponents/Tv";
+import { Computer } from "../modelComponents/Computer";
+import { Folders } from "../modelComponents/Folders";
+import { Suitcase } from "../modelComponents/Vintage_suitcase_4k";
+import { ShagRug } from "../modelComponents/DescansoShagRug";
+import { BathroomRug } from "../modelComponents/Bathroom_rug";
 
 const MainScene = () => {
   return (
@@ -40,6 +50,7 @@ const MainScene = () => {
         scale={0.025}
         position={[-2.2, -0.821, 4.5]}
       />
+      {/* blue painted table group  */}
       <group position={[-2.1, -0.821, -0.9]}>
         <PaintedTable />
         <PaintedChair rotation-y={[2.8]} position={[0, 0, 0.4]} />
@@ -57,13 +68,15 @@ const MainScene = () => {
         </group>
       </group>
       <ArmChair rotation-y={-4.7} position={[-3.5, -0.8201, 1]} />
-      <ArmChair rotation-y={4.7} position={[0.32, -0.8201, 1.9]} />
-      <group position={[0.56, -0.8201, 0.7]}>
+      <ArmChair rotation-y={4.7} position={[0.32, -0.8201, 1.7]} />
+      {/* wooden cabinet set */}
+      <group position={[0.4, -0.8201, 0]}>
         <ModernWoodenCabinet rotation-y={4.71} />
-        <TeaSet rotation-y={4.71} position={[-0.03, 0.4148, 0.37]} />
-        <WoodenPlate position={[0, 0.4148, -0.4]} />
-        <CarrotCake position={[0, 0.44, -0.4]} />
+        <TeaSet rotation-y={4.71} position={[-0.03, 0.545, 0.37]} />
+        <WoodenPlate position={[0, 0.545, -0.4]} />
+        <CarrotCake position={[0, 0.57, -0.4]} />
       </group>
+      {/* bookshelf group */}
       <group position={[-2.74, -0.821, 2.37]}>
         <Shelf rotation-y={3.14} />
         <group rotation-y={3.14}>
@@ -82,24 +95,44 @@ const MainScene = () => {
           <Books position={[-0.42, 1.86, 0.15]} />
         </group>
       </group>
+      {/* living room */}
       <SofaA position={[-2.62, -0.821, 3.05]} />
-      <CoffeeTable position={[-2.6, -0.821, 4.3]} />
+      <CoffeeTable position={[-2.4, -0.821, 4.3]} />
       <GreenChair rotation-y={2.8} position={[-3.4, -0.821, 5]} />
-      <GreenChair rotation-y={-2.8} position={[-1.5, -0.821, 5]} />
-      <SteelFrameShelves rotation-y={4.7} position={[3.7, -0.821, 3.1]} />
-      <ModernArmChair rotation-y={-4.7} position={[3.2, -0.821, 4.92]} />
-      <ArmChair position={[2.6, -0.8201, 2.78]} />
+      <GreenChair rotation-y={-1.57} position={[-1, -0.821, 4.6]} />
+      <Tv rotation-y={3.14} position={[0, 1, 5.7]} />
+      <ShagRug rotation-y={1.57} position={[-2.5, -0.85, 4.3]} />
+      {/* office */}
+      <group position={[1.2, -0.821, 3.5]}>
+        <SteelFrameShelves rotation-y={-4.7} />
+        <Folders rotation-y={1.57} position={[-0.05, 1.37, 3.6]} />
+        <Suitcase rotation-y={1.57} position={[2.5, 0, -0.3]} />
+      </group>
+      <ModernArmChair rotation-y={-4.7} position={[3.2, -0.821, 4.89]} />
+      <ArmChair position={[2.8, -0.8201, 2.78]} />
       <group position={[3.6, -0.821, 4.7]}>
         <ComputerDesk rotation-y={4.7} />
+        <Computer rotation-y={-1.57} position={[0, 1.01, 0.17]} />
         <Jug rotation-y={1} position={[0, 0.75, -0.4]} />
       </group>
-      <Bed position={[2.6, -0.8201, -1.76]} />
-      <BedroomDrawer rotation-y={-4.7} position={[1.15, -0.8201, -1.76]} />
-      <group position={[1.7, -0.8201, -2.56]}>
-        <BedroomNightStand />
-        <AlarmClock rotation-y={-4.4} position={[0, 0.432, 0.03]} />
+      {/* Bedroom */}
+      <group rotation-y={-1.57} position={[2.9, -0.8201, -0.4]}>
+        <Bed />
+        <BedroomDrawer rotation-y={3.14} position={[0, 0, 1.85]} />
+        <group position={[-0.9, 0, -0.78]}>
+          <BedroomNightStand />
+          <AlarmClock rotation-y={-4.4} position={[0, 0.432, 0.03]} />
+          <BedroomNightStand position={[1.8, 0, 0]} />
+        </group>
       </group>
-      <BedroomNightStand position={[3.5, -0.8201, -2.56]} />
+      {/* Bathroom */}
+      <group position={[-1, 0.68, -4.2]}>
+        <BathtubSet rotation-y={1.57} />
+        <Toilet position={[4.5, -1.48, -1.5]} />
+        <BathroomSink rotation-y={3.14} position={[2.87, -1.48, 1.3]} />
+        <Shower rotation-y={3.14} position={[4.5, -1, 1.05]} />
+        <BathroomRug position={[3.56, -1.48, -0.95]} />
+      </group>
       {/* floor textures */}
       <WoodLivingFloor />
       {/* Outer Wall s */}

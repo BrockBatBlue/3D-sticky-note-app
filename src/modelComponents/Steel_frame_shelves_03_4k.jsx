@@ -12,7 +12,7 @@ export function SteelFrameShelves(props) {
     "/steel_frame_shelves_03_4k-transformed.glb"
   );
   return (
-    <group {...props} dispose={null} scale={0.6}>
+    <group {...props} dispose={null} scale={0.78}>
       <mesh
         geometry={nodes.Cube001.geometry}
         material={materials.steel_frame_shelves_03}

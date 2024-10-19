@@ -10,7 +10,7 @@ import { useGLTF } from "@react-three/drei";
 export function TeaSet(props) {
   const { nodes, materials } = useGLTF("/tea_set_01_4k-transformed.glb");
   return (
-    <group {...props} dispose={null} scale={0.7}>
+    <group {...props} dispose={null} scale={0.8}>
       <mesh
         geometry={nodes.tea_set_01_plate_large_square_01.geometry}
         material={materials.tea_set_01}

@@ -4,17 +4,29 @@ Command: npx gltfjsx@6.5.2 vintage_suitcase_4k.gltf --transform
 Files: vintage_suitcase_4k.gltf [15.48KB] > D:\OneDrive\Documents\personalProjects\threejs-and-react-projects\react-three-fiber-note-taking-app\public\models\readingRoom\vintage_suitcase_4k.gltf\vintage_suitcase_4k-transformed.glb [1.62MB] (-10385%)
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/vintage_suitcase_4k-transformed.glb')
+export function Suitcase(props) {
+  const { nodes, materials } = useGLTF("/vintage_suitcase_4k-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.vintage_suitcase_01_bottom.geometry} material={materials.vintage_suitcase_01} position={[0.459, 0.014, 0.006]} rotation={[Math.PI, 0, 0]} scale={1.587} />
-      <mesh geometry={nodes.vintage_suitcase_02_bottom.geometry} material={materials.vintage_suitcase_02} position={[-0.456, 0.014, 0.006]} rotation={[Math.PI, 0, 0]} scale={1.587} />
+      <mesh
+        geometry={nodes.vintage_suitcase_01_bottom.geometry}
+        material={materials.vintage_suitcase_01}
+        position={[0.459, 0.014, 0.006]}
+        rotation={[Math.PI, 0, 0]}
+        scale={1.587}
+      />
+      <mesh
+        geometry={nodes.vintage_suitcase_02_bottom.geometry}
+        material={materials.vintage_suitcase_02}
+        position={[-0.456, 0.014, 0.006]}
+        rotation={[Math.PI, 0, 0]}
+        scale={1.587}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/vintage_suitcase_4k-transformed.glb')
+useGLTF.preload("/vintage_suitcase_4k-transformed.glb");

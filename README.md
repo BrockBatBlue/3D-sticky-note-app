@@ -68,7 +68,25 @@ When you want to load your last save, just click the load button in the opening 
 
 - Modern Kitchen model set: This work is based on "Kitchen Design Set V.001" (https://sketchfab.com/3d-models/kitchen-design-set-v001-47e74e0fab8f43a1b88cbfc0d7f9989f) by Truong Arch (https://sketchfab.com/kiemtruongkts) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 
-Bed model: This work is based on "Bed" (https://sketchfab.com/3d-models/bed-cd0e10e55ebf486eaf9c0a7bcb2cf0ab) by Dmitry Susidko (https://sketchfab.com/susidko.dima) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+- Bed model: This work is based on "Bed" (https://sketchfab.com/3d-models/bed-cd0e10e55ebf486eaf9c0a7bcb2cf0ab) by Dmitry Susidko (https://sketchfab.com/susidko.dima) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+- Toilet model: This work is based on "Toilet" (https://sketchfab.com/3d-models/toilet-132a8ee2af3a40d39d270fbed3d3666c) by HippoStance (https://sketchfab.com/hippostance) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+- Bathroom Sink Set: This work is based on "dlX - Bathroom Sink (Puris Aspekt)" (https://sketchfab.com/3d-models/dlx-bathroom-sink-puris-aspekt-9f4a07d36d934fdd8122978f4ad669e9) by d-luX (https://sketchfab.com/dluX80) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+- Bathtub set: This work is based on "Bathroom asset part 4" (https://sketchfab.com/3d-models/bathroom-asset-part-4-44d511ea01f84e719a83e476de75b7fc) by SofiaWolfie (https://sketchfab.com/SofiaWolfie) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+- Shower model: This work is based on "Shower Cabin" (https://sketchfab.com/3d-models/shower-cabin-e2c6a8dd490e4e4398378e1f6c9121a8) by Heliona (https://sketchfab.com/Heliona) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+- Desktop computer model: This work is based on "Desktop Computer" (https://sketchfab.com/3d-models/desktop-computer-561abc2fc95941609fc7bc6f232895c2) by Tyler P Halterman (https://sketchfab.com/tylerhalterman) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+- Tv model: This work is based on "TV" (https://sketchfab.com/3d-models/tv-1b7eff20a86b4cc692bc4222ac1ac252) by CN Entertainment (https://sketchfab.com/cn-entertainment) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+- Folders model: This work is based on "Several Folders" (https://sketchfab.com/3d-models/several-folders-1a493b49ef954985ab8057ca66c387d5) by janexx (https://sketchfab.com/janexx) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+- White shag rug model: This work is based on "Descanso 5X7 Off White Shag Rug" (https://sketchfab.com/3d-models/descanso-5x7-off-white-shag-rug-266799cf672444ea8d2c480b5c981b02) by diwhy.life (https://sketchfab.com/diwhy.life) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+
+- Bathroom rug: This work is based on "Bathroom Rug Two" (https://sketchfab.com/3d-models/bathroom-rug-two-3481214361e94161b6108ed9bd127aba) by robfitzy (https://sketchfab.com/robfitzy) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 
 ---
 

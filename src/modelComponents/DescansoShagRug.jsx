@@ -8,17 +8,26 @@ Source: https://sketchfab.com/3d-models/descanso-5x7-off-white-shag-rug-266799cf
 Title: Descanso 5X7 Off White Shag Rug
 */
 
-import React from 'react'
-import { useGLTF } from '@react-three/drei'
+import React from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/descansoShagRug-transformed.glb')
+export function ShagRug(props) {
+  const { nodes, materials } = useGLTF("/descansoShagRug-transformed.glb");
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Rug_Bottom_Rug_Bottom_0.geometry} material={materials.Rug_Bottom} position={[0, -0.017, 0]} rotation={[-1.557, -0.01, -Math.PI / 2]} />
-      <mesh geometry={nodes.model_tex_u1_v1_0.geometry} material={materials.tex_u1_v1} rotation={[-1.557, -0.01, -Math.PI / 2]} />
+      <mesh
+        geometry={nodes.Rug_Bottom_Rug_Bottom_0.geometry}
+        material={materials.Rug_Bottom}
+        position={[0, -0.017, 0]}
+        rotation={[-1.557, -0.01, -Math.PI / 2]}
+      />
+      <mesh
+        geometry={nodes.model_tex_u1_v1_0.geometry}
+        material={materials.tex_u1_v1}
+        rotation={[-1.557, -0.01, -Math.PI / 2]}
+      />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/descansoShagRug-transformed.glb')
+useGLTF.preload("/descansoShagRug-transformed.glb");

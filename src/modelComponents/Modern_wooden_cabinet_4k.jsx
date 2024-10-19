@@ -14,7 +14,7 @@ export function ModernWoodenCabinet(props) {
   );
   const { actions } = useAnimations(animations, group);
   return (
-    <group ref={group} {...props} dispose={null} scale={0.61}>
+    <group ref={group} {...props} dispose={null} scale={0.8}>
       <group name="Scene">
         <group
           name="modern_wooden_cabinet_path_l"
