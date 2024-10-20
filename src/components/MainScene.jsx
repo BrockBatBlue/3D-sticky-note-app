@@ -146,6 +146,7 @@ const MainScene = () => {
         <WoodLivingFloor />
         {/* Outer Wall s */}
         <OuterWalls />
+        {/* kitchen area */}
         <ColliderBox position={[-2.2, -0.42, -2.65]} scale={[3.5, 0.75, 0.6]} />
         <ColliderBox
           position={[-3.1, -0.42, -5.345]}
@@ -158,6 +159,18 @@ const MainScene = () => {
         />
         <ColliderBox position={[-3.65, 1.1, -4]} scale={[0.4, 0.9, 3.3]} />
         <ColliderBox position={[-2.9, 1.18, -5.42]} scale={[1.2, 0.75, 0.42]} />
+        {/* Reading area */}
+        <ColliderBox
+          position={[-2.1, -0.42, -0.895]}
+          scale={[1.975, 0.78, 0.95]}
+        />
+        <ColliderBox position={[0.41, -0.54, 0]} scale={[0.425, 0.54, 1.955]} />
+        <ColliderBox position={[0.334, -0.32, 1.7]} scale={[0.66, 1, 0.8]} />
+        <ColliderBox position={[-3.5, -0.32, 1]} scale={[0.66, 1, 0.8]} />
+        <ColliderBox position={[-2.75, 0.25, 2.23]} scale={[1, 2.2, 0.27]} />
+        {/* Bedroom */}
+        {/* Office */}
+        {/* Living room */}
       </Physics>
     </>
   );
