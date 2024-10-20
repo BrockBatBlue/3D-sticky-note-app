@@ -1,4 +1,3 @@
-import { EmptyHouse } from "../modelComponents/EmptyHouse";
 import { Kiwi } from "../modelComponents/Food_kiwi_01_4k";
 import { PaintedTable } from "../modelComponents/Painted_wooden_table_4k";
 import { PaintedChair } from "../modelComponents/Painted_wooden_chair_01_4k";
@@ -52,7 +51,6 @@ const MainScene = () => {
 
   return (
     <>
-      {/* <EmptyHouse /> */}
       <ModernKitchen
         rotation-y={1.57}
         scale={0.025}
@@ -247,7 +245,7 @@ const MainScene = () => {
         />
         <ColliderBox
           position={[-2.39, -0.61, 4.3]}
-          scale={[1.15, 0.36, 0.71]}
+          scale={[1.15, 0.37, 0.71]}
         />
         <ColliderBox
           position={[-2.55, 0.31, 5.72]}
