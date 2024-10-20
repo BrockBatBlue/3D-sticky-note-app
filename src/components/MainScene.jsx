@@ -235,6 +235,31 @@ const MainScene = () => {
         />
         <ColliderBox position={[3.6, 0.03, 4.3]} scale={[0.166, 0.19, 0.23]} />
         {/* Living room */}
+        <ColliderBox position={[-3.768, -0.4, 3.05]} scale={[0.3, 0.8, 0.88]} />
+        <ColliderBox position={[-1.472, -0.4, 3.05]} scale={[0.3, 0.8, 0.88]} />
+        <ColliderBox
+          position={[-2.61, -0.26, 2.82]}
+          scale={[2.15, 1.05, 0.45]}
+        />
+        <ColliderBox
+          position={[-2.61, -0.54, 3.22]}
+          scale={[2.15, 0.54, 0.55]}
+        />
+        <ColliderBox
+          position={[-2.39, -0.61, 4.3]}
+          scale={[1.15, 0.36, 0.71]}
+        />
+        <ColliderBox
+          position={[-2.55, 0.31, 5.72]}
+          scale={[1.125, 0.67, 0.073]}
+        />
+        <ColliderBox position={[-3.5, -0.29, 5.3]} scale={[0.5, 1.05, 0.2]} />
+        <ColliderBox position={[-0.7, -0.29, 4.6]} scale={[0.16, 1.05, 0.5]} />
+        <ColliderBox
+          position={[-1.04, -0.58, 4.6]}
+          scale={[0.52, 0.46, 0.64]}
+        />
+        <ColliderBox position={[-3.4, -0.58, 5]} scale={[0.64, 0.46, 0.52]} />
       </Physics>
     </>
   );
